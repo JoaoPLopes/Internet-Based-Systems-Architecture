@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Information</title>
+</head>
+<body>
+
+<h1> {{name}} </h1>
+
+<h2> Esta sala fica no campi do IST {{campi}} no {{build}} </h2>
+
+Os eventos atribuidos para esta sala na próxima semana são os seguintes:
+
+<h2> AULAS </h2>
+{% for item in classes %}
+    <ul>
+        <li>{{item['course']['name']}} - {{item['course']['acronym']}} -- {{item['course']['academicTerm']}}
+            <ul>
+                <li>Date : {{item['weekday']}}, {{item['start']}} -- {{item['end']}}</li>
+                <li>Course Web Page : <a href="{{item['course']['url']}}">{{item['course']['url']}}</a></li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+<h2> OTHER EVENTS </h2>
+{% for item in generics %}
+    <ul>
+        <li>{{item['title']}}
+            <ul>
+                <li>Date : {{item['weekday']}}, {{item['start']}} -- {{item['end']}}</li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+
+</body>
+</html>

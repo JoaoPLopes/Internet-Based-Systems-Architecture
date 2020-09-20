@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+
+<h1>COLLEGE SYSTEM APPLICATION</h1>
+
+You are successfully autheticated as:
+
+    <h2>{{ username }} => {{name}}</h2>
+
+    <img id="ItemPreview" src="">
+
+    <script type="text/javascript">
+        var ByteArray = '{{ imagesrc }}'
+        document.getElementById("ItemPreview").src = "data:image/png;base64," + ByteArray;
+    </script>
+
+<h2>Links</h2>
+
+
+<a href="/qr_code">Read QR Code</a>
+<a href="/validation"> Validation</a>
+
+<br>
+<br>
+
+<button type="button" onclick="window.location.href ='http://127.0.0.1:5100/logout';" >Log Out!</button>
+ 
+
+
+</body>
+</html>

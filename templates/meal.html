@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Today's Meals</title>
+</head>
+<body>
+
+<h1> Meal </h1>
+
+<h2> Almoço {{dia}} </h2>
+
+{% for item in al %}
+    <ul>
+        <li>{{item['menu']}}
+            <ul>
+                <li>{{item['type']}} : {{item['name']}}</li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+<h2> Jantar {{dia}}</h2>
+
+{% for item in jan %}
+    <ul>
+        <li>{{item['menu']}}
+            <ul>
+                <li>{{item['type']}} : {{item['name']}}</li>
+            </ul>
+        </li>
+    </ul>
+{% endfor %}
+
+</body>
+</html>
