@@ -3,7 +3,7 @@ Web application used to ease the access of Instituto superiror Técnico resource
 
 The project was developed for the course [ASINT](https://fenix.tecnico.ulisboa.pt/disciplinas/ASInt77/2019-2020/1-semestre) from my masters program at Instituto Superior Técnico(IS).
 
-In this project we an application to acess information about [IST](https://tecnico.ulisboa.pt/pt/) resources (buildings, rooms, services, people, canteen).
+In this project we implemented an application to acess information about [IST](https://tecnico.ulisboa.pt/pt/) resources (buildings, rooms, services, people, canteen).
 
 The system implemented is divided in the following components:
 
